@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:paddingBottom="@dimen/activity_vertical_margin" >
+
+    <corver.yyh.com.mycorveruploadapp.view.HoveringScrollview
+        android:id="@+id/hoveringScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/rlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal" >
+
+                <ImageView
+                    android:id="@+id/tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="150dp"
+                    android:scaleType="fitXY"
+                    android:gravity="center_vertical"
+                    android:background="@mipmap/iv_top" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/search02"
+                android:layout_width="match_parent"
+                android:layout_height="70dp" >
+
+                <!-- 这个悬浮条必须是固定高度 -->
+
+                <LinearLayout
+                    android:id="@+id/hoveringLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:background="#A8A8A8"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="10dp" >
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="120dp"
+                            android:layout_height="79dp"
+                            android:gravity="center"
+                            android:scaleType="fitXY"
+                            android:background="@mipmap/grap" />
+                    </LinearLayout>
+
+
+                    <Button
+                        android:id="@+id/btnQiaBuy"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="#FF7F00"
+                        android:onClick="clickListenerMe"
+                        android:padding="10dp"
+                        android:text="抢红包"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/lv_tontent"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@color/colorPrimaryDark"
+                android:dividerHeight="1dp"
+                android:background="@color/colorAccent"
+                android:gravity="center_horizontal" />
+        </LinearLayout>
+    </corver.yyh.com.mycorveruploadapp.view.HoveringScrollview>
+
+    <LinearLayout
+        android:id="@+id/search01"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>
