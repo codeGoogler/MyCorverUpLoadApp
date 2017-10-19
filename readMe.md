@@ -132,7 +132,6 @@ private Handler handler = new Handler() {
 >http://download.csdn.net/detail/androidstarjack/9892366
 >
 
-
 #### 相信自己，没有做不到的，只有想不到的
  如果你觉得此文对您有所帮助，欢迎入群 QQ交流群 ：232203809
 微信公众号：终端研发部
