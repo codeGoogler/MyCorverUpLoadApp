@@ -125,7 +125,7 @@ private Handler handler = new Handler() {
 >
 > 项目Github链接地址
 >
->https://github.com/androidstarjack/MyCircleWaveDiverge
+>https://github.com/androidstarjack/MyCorverUpLoadApp
 >
 >下载慢？CSDN下载链接：
 >
